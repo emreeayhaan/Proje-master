@@ -19,7 +19,7 @@
         <TextBox x:Name="surnameTB" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="260,137,0,0" FontSize="30" FontFamily="Yu Gothic Medium"/>
         <TextBox x:Name="phonenumberTB" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="260,202,0,0" FontSize="30" FontFamily="Yu Gothic Medium"/>
         <Button x:Name="saveButton" Content="SAVE" HorizontalAlignment="Left" Margin="118,327,0,0" VerticalAlignment="Top" Width="160" Height="52" Click="saveButton_Click" FontFamily="Stencil" FontSize="24"/>
-        <Button x:Name="cancelButton" Content="CANCEL" HorizontalAlignment="Right" Margin="0,327,177.6,0" VerticalAlignment="Top" Width="160" Height="52" RenderTransformOrigin="2.142,0.584" Click="cancelButton_Click" FontFamily="Stencil" FontSize="24"/>
+        <Button x:Name="cancelButton" Content="CANCEL" HorizontalAlignment="Right" Margin="0,266,65.6,0" VerticalAlignment="Top" Width="160" Height="52" RenderTransformOrigin="2.142,0.584" Click="cancelButton_Click" FontFamily="Stencil" FontSize="24"/>
         <TextBox x:Name="genderTB" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="260,259,0,0" FontSize="30" FontFamily="Yu Gothic Medium"/>
         <Label x:Name="Gender" Content="Gender" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,248,0,0" FontSize="30" Height="98" Width="250" FontFamily="Yu Gothic UI Semibold"/>
 
