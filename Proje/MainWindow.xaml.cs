@@ -22,21 +22,11 @@ namespace Proje
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        MySQLClass sQLClass = new MySQLClass();
         public MainWindow()
         {
             InitializeComponent();
-            
-            listView1.Items.Clear();
-            MySqlConnection baglan = new MySqlConnection("server = localhost; database = db; uid = root; pwd = 123456;");
-            baglan.Open();
-            MySqlCommand ekle = new MySqlCommand("select * from user", baglan);
-            MySqlDataReader dr = ekle.ExecuteReader();
-            while (dr.Read())
-            {
-                listView1.Items.Add(dr["ID"].ToString() + "                " + dr["NAME"].ToString() + "              " + dr["SURNAME"].ToString() + "              " + dr["PHONENUMBER"].ToString() + "                " + dr["GENDER"].ToString());
-            }
-            baglan.Close();
+            sQLClass.MySqlRefresh(listView1);
         }
         private void addButton_Click(object sender, RoutedEventArgs e)
         {
@@ -54,36 +44,13 @@ namespace Proje
 
         private void deleteButton_Click(object sender, RoutedEventArgs e)
         {
-            MySqlConnection baglan = new MySqlConnection("server = localhost; database = db; uid = root; pwd = 123456; ");
-            baglan.Open();
-            MySqlCommand delete = new MySqlCommand($"DELETE FROM `db`.`user`WHERE ID ={db.Text};", baglan);          
-            delete.ExecuteNonQuery();
-            baglan.Close();
-            listView1.Items.Clear();
-            baglan = new MySqlConnection("server = localhost; database = db; uid = root; pwd = 123456;");
-            baglan.Open();
-            MySqlCommand refresh = new MySqlCommand("select * from user", baglan);
-            MySqlDataReader dr = refresh.ExecuteReader();
-            while (dr.Read())
-
-            {
-                listView1.Items.Add(dr["ID"].ToString() + "                " + dr["NAME"].ToString() + "              " + dr["SURNAME"].ToString() + "              " + dr["PHONENUMBER"].ToString() + "                " + dr["GENDER"].ToString());
-            }
-            baglan.Close();
+            sQLClass.MySqlDelete(listView1, db);
+            sQLClass.MySqlRefresh(listView1);
         }
 
         private void refreshbtn_Click(object sender, RoutedEventArgs e)
         {
-            listView1.Items.Clear();
-            MySqlConnection baglan = new MySqlConnection("server = localhost; database = db; uid = root; pwd = 123456;");
-            baglan.Open();
-            MySqlCommand refresh = new MySqlCommand("select * from user", baglan);
-            MySqlDataReader dr = refresh.ExecuteReader();
-            while (dr.Read())
-            {
-                listView1.Items.Add(dr["ID"].ToString() + "                " + dr["NAME"].ToString() + "              " + dr["SURNAME"].ToString() + "              " + dr["PHONENUMBER"].ToString() + "                " + dr["GENDER"].ToString());
-            }
-            baglan.Close();
+            sQLClass.MySqlRefresh(listView1);
             MessageBox.Show("Yenilendi");
         }
 
