@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Proje"
         mc:Ignorable="d"
         Title="UpdateWindow" Height="450" Width="800">
-    <Grid x:Name="surnameTB">
+    <Grid x:Name="surnameTB" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
         <Label Content="ID :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,27,0,0" FontSize="30" Height="98" Width="250" FontFamily="Yu Gothic UI Semibold"/>
         <Label Content="Name :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,88,0,0" FontSize="30" Height="98" Width="250" FontFamily="Yu Gothic UI Semibold"/>
         <Label Content="Surname :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,149,0,0" RenderTransformOrigin="1.016,3.053" FontSize="30" Height="98" Width="250" FontFamily="Yu Gothic UI Semibold"/>
@@ -15,7 +15,7 @@
         <TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="263,88,0,0" FontSize="30"/>
         <TextBox x:Name="surnameTB1" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="263,145,0,0" FontSize="30"/>
         <Button x:Name="updateButton" Content="UPDATE" HorizontalAlignment="Left" Margin="580,57,0,0" VerticalAlignment="Top" Width="165" Height="64" Click="updateButton_Click" RenderTransformOrigin="2.995,0.648" FontFamily="Arial Black" FontSize="24"/>
-        <Button x:Name="cancelButton" Content="CANCEL" HorizontalAlignment="Right" Margin="0,137,48.6,0" VerticalAlignment="Top" Width="165" Height="64" RenderTransformOrigin="1.866,0.53" Click="cancelButton_Click" FontFamily="Stencil" FontSize="24"/>
+        <Button x:Name="cancelButton" Content="CANCEL" HorizontalAlignment="Right" Margin="0,137,48.6,0" VerticalAlignment="Top" Width="165" Height="64" RenderTransformOrigin="1.866,0.53" Click="cancelButton_Click" FontFamily="Arial Black" FontSize="24"/>
         <Label Content="Gender:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="13,271,0,0" FontSize="30" Height="98" Width="250" FontFamily="Yu Gothic UI Semibold"/>
         <TextBox x:Name="phoneTB" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="263,210,0,0" FontSize="30"/>
         <TextBox x:Name="genderTB" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="263,271,0,0" FontSize="30"/>
