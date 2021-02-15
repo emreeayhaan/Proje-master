@@ -31,7 +31,7 @@ namespace Proje
         {
             MySqlConnection baglan = new MySqlConnection("server = localhost; database = proje ; uid = root; pwd = 17851765910;");
             baglan.Open();
-            MySqlCommand comm = new MySqlCommand($"UPDATE user SET NAME = '{nameTB.Text}',SURNAME = '{surnameTB1.Text}',PHONENUMBER = '{phoneTB.Text }' WHERE ID = {idTB.Text}; ", baglan);
+            MySqlCommand comm = new MySqlCommand($"UPDATE user SET NAME = '{nameTB.Text}',SURNAME = '{surnameTB1.Text}',PHONENUMBER = '{phoneTB.Text }', GENDER = '{genderTB.Text}' WHERE ID = {idTB.Text}; ", baglan);
             comm.ExecuteNonQuery();
             baglan.Close();
             MessageBox.Show("Kayıt attı");
