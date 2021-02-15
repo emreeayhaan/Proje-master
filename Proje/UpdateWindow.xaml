@@ -16,7 +16,7 @@
         <TextBox x:Name="surnameTB1" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="260,137,0,0" FontSize="30"/>
         <TextBox x:Name="phoneTB" HorizontalAlignment="Left" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Margin="260,202,0,0" FontSize="30"/>
         <Button x:Name="updateButton" Content="UPDATE" HorizontalAlignment="Left" Margin="95,300,0,0" VerticalAlignment="Top" Width="165" Height="64" Click="updateButton_Click" RenderTransformOrigin="2.995,0.648" FontFamily="Stencil" FontSize="24"/>
-        <Button x:Name="cancelButton" Content="CANCEL" HorizontalAlignment="Right" Margin="0,300,99,0" VerticalAlignment="Top" Width="165" Height="64" RenderTransformOrigin="1.866,0.53" Click="cancelButton_Click" FontFamily="Stencil" FontSize="24"/>
+        <Button x:Name="cancelButton" Content="CANCEL" HorizontalAlignment="Right" Margin="0,300,179.6,0" VerticalAlignment="Top" Width="165" Height="64" RenderTransformOrigin="1.866,0.53" Click="cancelButton_Click" FontFamily="Stencil" FontSize="24"/>
 
     </Grid>
 </Window>
