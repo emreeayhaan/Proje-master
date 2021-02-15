@@ -39,7 +39,7 @@ namespace Proje
         {
             baglan = new MySqlConnection("server = localhost; database = proje ; uid = root; pwd = 17851765910;");
             baglan.Open();
-            comm = new MySqlCommand($"DELETE FROM user WHERE ID ={tb.Text};", baglan);
+            comm = new MySqlCommand($"DELETE FROM user WHERE ID = {tb.Text};", baglan);
             comm.ExecuteNonQuery();
             baglan.Close();
             lv.Items.Clear();
